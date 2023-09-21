@@ -1,0 +1,181 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+  
+
+
+
+
+body{
+    background-color: black;
+}
+
+
+
+
+/* top of page */
+
+
+.rick{
+    height: 90px;
+}
+
+
+.rick-title {
+    display: block; /* Ensure the image is a block-level element */
+    margin: 0 auto; /* Center horizontally by setting left and right margins to auto */
+    text-align: center; /* Center horizontally for inline elements inside the image */
+    max-width: 100%; 
+}
+
+.input-search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding: 10px; /* Add some padding for spacing */
+    gap:10px;
+    height: 16px;
+
+
+          
+}
+
+
+.input-search input[type="text"] {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    font-family:'Architects Daughter', cursive;;
+}
+
+.btn{
+    background-color: #4CAF50; /* Green background color */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 12px;
+    cursor: pointer;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 16px;
+}
+  
+/* Style the button on hover */
+.btn:hover {
+    background-color: #468e49; /* Slightly darker green on hover */
+ }
+
+/* end of very top of page */
+
+
+
+/* character card */
+
+.character-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid with 300px minimum width */
+    gap: 30px; /* Adjust the gap between characters */
+    margin-bottom: 40px;
+
+}
+
+.character img{
+    max-width: 100%; /* Ensure the image does not exceed its parent container's width */
+    height: auto; 
+
+}
+
+.character p{
+    padding: 5px;
+}
+
+.character {
+    border: 1px solid  #1A1A1A;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    background-color:  #1A1A1A;
+    text-align: center;
+    color: rgb(247, 247, 247);
+    transition: transform 0.2s;
+    position: relative;
+    font-family: 'Architects Daughter', cursive;
+    
+
+    
+    
+    /* Remove display: inline-block and width */
+}
+
+
+.character:hover {
+    transform: translateY(-10px); /* Move the element 10 pixels up */
+
+
+
+}
+
+/* character card */
+
+.character:hover .alive-icon,
+.character:hover .dead-icon,
+.character:hover .unknown-icon {
+  visibility: visible;
+}
+
+.alive-icon,
+.dead-icon, .unknown-icon {
+  top: 10px; /* Adjust this value for vertical positioning */
+  right: 13px; /* Adjust this value for horizontal positioning */
+  font-size: 23px;
+  display: none;
+  position: absolute;
+  visibility: hidden;
+
+
+
+}
+
+
+
+.alive-icon {
+  color: green; /* Green color for alive characters */
+}
+
+.dead-icon {
+  color: red; /* Red color for dead characters */
+}
+
+.unknown-icon{
+    color: gray;
+}
+
+
+
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 60px;
+}
+
+
+
+.last-text{
+    color:  #4CAF50; 
+    text-align: center;
+    font-family:'Architects Daughter', cursive;
+    width: 100%;
+    background:#262626;
+    padding: 15px 0;
+ 
+  
+
+}
+
