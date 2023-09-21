@@ -28,13 +28,14 @@ body{
     margin: 0 auto; /* Center horizontally by setting left and right margins to auto */
     text-align: center; /* Center horizontally for inline elements inside the image */
     max-width: 100%; 
+    margin-bottom: 40px;
 }
 
 .input-search{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
     padding: 10px; /* Add some padding for spacing */
     gap:10px;
     height: 16px;
@@ -87,6 +88,7 @@ body{
 .character img{
     max-width: 100%; /* Ensure the image does not exceed its parent container's width */
     height: auto; 
+    border-radius: 10px;
 
 }
 
@@ -130,8 +132,8 @@ body{
 
 .alive-icon,
 .dead-icon, .unknown-icon {
-  top: 10px; /* Adjust this value for vertical positioning */
-  right: 13px; /* Adjust this value for horizontal positioning */
+  top: 14px; /* Adjust this value for vertical positioning */
+  right: 35px; /* Adjust this value for horizontal positioning */
   font-size: 23px;
   display: none;
   position: absolute;
@@ -152,7 +154,7 @@ body{
 }
 
 .unknown-icon{
-    color: gray;
+    color: white;
 }
 
 
@@ -173,7 +175,7 @@ body{
     font-family:'Architects Daughter', cursive;
     width: 100%;
     background:#262626;
-    padding: 15px 0;
+    padding: 20px 0;
  
   
 
