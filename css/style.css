@@ -80,8 +80,9 @@ body{
 .character-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid with 300px minimum width */
-    gap: 30px; /* Adjust the gap between characters */
+    gap: 20px; /* Adjust the gap between characters */
     margin-bottom: 40px;
+    padding: 0 15px;
 
 }
 
@@ -178,6 +179,53 @@ body{
     padding: 20px 0;
  
   
+
+}
+
+.scroll-top{
+    position: fixed;
+    bottom: 3.7rem;
+    right: 2.2rem;
+
+}
+
+.scroll-top i{
+    padding: 8px;
+    font-size: 1.1rem;
+    color: white;
+    background:  #858585;
+    border-radius: 5rem;
+
+
+}
+
+/* Mobile responsiveness media queries */
+
+@media(max-width: 768px){
+   
+    .rick{
+        margin-bottom: 38px;
+    }
+
+    .rick-title {
+        margin-bottom: 40px;
+    }
+
+    .character-container {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Adjust the column width for smaller screens */
+        gap: 15px; /* Adjust the gap for smaller screens */
+        padding: 10px 17px;
+
+    }
+
+    .scroll-top{
+        position: fixed;
+        bottom: 4rem;
+        right: 1rem;
+    
+    }
+    
+    
 
 }
 
