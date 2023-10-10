@@ -212,7 +212,7 @@ body{
     }
 
     .character-container {
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Adjust the column width for smaller screens */
+        grid-template-columns: repeat(auto-fit, minmax(215px, 1fr)); /* Adjust the column width for smaller screens */
         gap: 15px; /* Adjust the gap for smaller screens */
         padding: 10px 17px;
 
@@ -225,6 +225,23 @@ body{
     
     }
     
+    .character:active {
+        transform: translateY(-10px);
+    }
+
+    .alive-icon,
+    .dead-icon, .unknown-icon {
+    top: 14px; /* Adjust this value for vertical positioning */
+    right: 18px; /* Adjust this value for horizontal positioning */
+    font-size: 23px;
+    display: none;
+    position: absolute;
+    visibility: hidden;
+
+
+
+    }
+
     
 
 }
